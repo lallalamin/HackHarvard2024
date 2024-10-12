@@ -1,0 +1,9 @@
+name = "health-worker"
+type = "javascript"
+route = ''
+zone_id = ''
+usage_model = ''
+account_id = 'f4f847f9822bea2f1a058a108c23ef01'
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2024-10-12"

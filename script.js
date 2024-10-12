@@ -1,3 +1,5 @@
+const workerURL = "https://health-worker.mari-hirota97.workers.dev"
+
 document.getElementById('health-form').addEventListener('submit', async function(e) {
     e.preventDefault();
   
@@ -10,7 +12,7 @@ document.getElementById('health-form').addEventListener('submit', async function
     };
   
     try {
-      const response = await fetch('https://your-worker-subdomain.workers.dev/predict', {
+      const response = await fetch(`${workerURL}/predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -44,7 +46,7 @@ document.getElementById('health-form').addEventListener('submit', async function
     };
   
     try {
-      const response = await fetch('https://your-worker-subdomain.workers.dev/schedule', {
+      const response = await fetch(`${workerURL}/schedule`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
